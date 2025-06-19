@@ -5,3 +5,4 @@ metadata:
   namespace: flux-system
 data:
   name: "Sarvesh"
+  name2: "Sarvesh2"

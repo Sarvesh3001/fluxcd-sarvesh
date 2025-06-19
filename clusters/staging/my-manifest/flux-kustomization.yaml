@@ -1,0 +1,17 @@
+apiVersion: kustomize.toolkit.fluxcd.io
+kind: Kustomization
+metadata:
+ name: podinfo
+ namespace: default
+spec:
+  interval: 10m
+  targetNamespace: default
+  prune: true
+  timeout: 1m
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  path: "./clusters/staging/my-manifest"
+
+
+
