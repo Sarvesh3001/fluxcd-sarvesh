@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   name: myapp
   namespace: flux-system
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
 data:
   name: "Sarvesh"
   name2: "Sarvesh2"
