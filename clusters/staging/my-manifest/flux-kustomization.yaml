@@ -8,12 +8,18 @@ spec:
   targetNamespace: flux-system
   prune: true
   timeout: 1m
+  path: "./clusters/staging/my-manifest"
   sourceRef:
     kind: GitRepository
     name: flux-system
     namespace: flux-system
   dependsOn: 
     - name: flux-system
+  commonMetadata:
+    labels:
+      app: my-app
+    annotations:
+      controlled-by: sarvesh
 
 
 
