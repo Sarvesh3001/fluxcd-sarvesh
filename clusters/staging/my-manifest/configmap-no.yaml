@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kustom-cm
+  namespace: flux-system
+data:
+  app: Bidder
