@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: outside-configmap
+  namespace: default
+data:
+  name: baby
